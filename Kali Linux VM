@@ -1,0 +1,15 @@
+**Kali Linux Virtual Machine**
+•	Created a Kali Linux VM in VMware Workstation using an ISO installer from kali.org
+•	Configured the VM for approximately 4GB RAM, 2 vCPU cores, NAT networking, and a growable virtual disk (60GB recommended during setup; final disk capacity not independently verified). This is going to depend on how much capacity your Workstation has.
+•	Installed Kali using hostname kali-attacker; left DNS domain field blank; created a local user account.
+•	Used guided partitioning on the VMware virtual disk; approved writing partition changes and installed GRUB to the virtual boot disk.
+•	Selected the Xfce desktop and Kali tool collection during installation.
+•	Updated package metadata and installed upgrades using apt; accepted automatic service restarts during package upgrades.
+•	Installed/open-vm-tools-desktop was recommended and a reboot followed; exact command completion not independently confirmed.
+•	A clean VMware snapshot was recommended; creation was not confirmed.
+Kali commands used 
+•	sudo apt update – update you Kali Machine after downloading.
+•	sudo apt full-upgrade -y – Upgrade all the upgradable packages.
+•	sudo reboot -  restart the system to apply updtaes and changes.
+•	ip -br a – check your connections
+•	ping -c 4 kali.org

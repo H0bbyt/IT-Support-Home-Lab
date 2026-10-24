@@ -1,5 +1,5 @@
 # IT-Support-Home-Lab
-# IT Support & Active Directory Home Lab
+
 # Project Overview
 This project documents hands-on experience building and managing a virtual IT environment using VMware Workstation Pro, Windows Server 2025, Active Directory, DNS, and Kali Linux.
 

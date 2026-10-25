@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-Monster Hacker by 35 is a hands-on IT infrastructure and cybersecurity project designed to develop practical skills in technical support, system administration, networking, Active Directory, and ethical hacking.
+This is a hands-on IT infrastructure and cybersecurity project designed to develop practical skills in technical support, system administration, networking, Active Directory, and ethical hacking.
 
-The project simulates a small business IT environment using VMware Workstation, Windows Server 2025, Windows 11 Enterprise, and Kali Linux.
+The project simulates a small business IT environment using VMware Workstation Pro, Windows Server 2025, Windows 11 Enterprise, and Kali Linux.
 
 The initial phase focuses on building and administering a functional Windows domain environment while practicing common Help Desk responsibilities. Future phases will expand into Windows security, network analysis, automation, and authorized penetration testing.
 

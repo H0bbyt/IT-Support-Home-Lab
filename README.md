@@ -1,4 +1,4 @@
-# Monster Hacker by 35 — IT & Cybersecurity Home Lab
+# Homelab — IT & Cybersecurity Home Lab
 
 ## Project Overview
 

@@ -1,4 +1,4 @@
-# Homelab — IT & Cybersecurity Home Lab
+# IT & Cybersecurity Home Lab
 
 ## Project Overview
 

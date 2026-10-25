@@ -1,21 +1,54 @@
-# IT-Support-Home-Lab
+# Monster Hacker by 35 — IT & Cybersecurity Home Lab
 
-# Project Overview
-This project documents an early hands-on experience building and managing a virtual IT environment using VMware Workstation Pro, Windows Server 2025, Active Directory, DNS, and Kali Linux.
+## Project Overview
 
-# Lab Enviroment
+Monster Hacker by 35 is a hands-on IT infrastructure and cybersecurity project designed to develop practical skills in technical support, system administration, networking, Active Directory, and ethical hacking.
 
-I built my IT Support and Pentester Home Lab using an Acer Nitro 5 laptop running Windows 11 with 16GB of RAM. I used VMware Workstation Pro to create and manage virtual machines. The Lab Environment consist of 3 virtual machines Windows Server 2025, Windows 11, and a Kali Linux. The Windows Server virtual machine was configured as a domain controller named **DC01**, hosting an Active Directory domain called monster.test. To establish consistent network connectivity, I configured the domain controller with a static IP address on a VMware NAT network.
+The project simulates a small business IT environment using VMware Workstation, Windows Server 2025, Windows 11 Enterprise, and Kali Linux.
 
-# Lab Deployment and Configurations
+The initial phase focuses on building and administering a functional Windows domain environment while practicing common Help Desk responsibilities. Future phases will expand into Windows security, network analysis, automation, and authorized penetration testing.
 
-**First Machine:** Kali Linux ISO from kali.org. The kali Linux VM has 4GB RAM, 2 vCPUs cores, NAT network and a growable disk with 60GB.
-I successfully installed and configured Kali Linux and Windows Server 2025 within VMware Workstation. I began by setting up the virtual machines, allocating hardware resources, and updating Kali Linux to prepare it for future cybersecurity exercises.
+## Lab Environment
 
-Next, I configured Windows Server 2025 by renaming the server to DC01 and assigning it a static IPv4 address. I installed Active Directory Domain Services (AD DS) and DNS to establish my first Windows domain, `monster.test`.
+| Virtual Machine | Operating System | Role |
+|---|---|---|
+| DC01 | Windows Server 2025 | Active Directory Domain Services and DNS |
+| CLIENT01 | Windows 11 Enterprise | Domain-joined workstation |
+| Kali Linux | Kali Linux | Security testing workstation |
 
-During the domain controller promotion process, I encountered a prerequisite validation error caused by the local Administrator account having a blank password. I investigated the error, identified the cause, configured a strong Administrator password, and completed the domain controller setup.
+**Domain:** `monster.test`  
+**Virtual Network:** VMware NAT (VMnet8)  
 
-After confirming that the Active Directory and DNS services were running, I used Active Directory Users and Computers (ADUC) to create an organizational structure consisting of an Employees Organizational Unit (OU) with three departmental OUs: IT, Human Resources (HR), and Sales.
+## Virtual Machine Configurations
 
-**Outcome:** By the end of Day 1, I had established a functional virtualized Active Directory environment for practicing Windows Server administration, user account management, Group Policy, network troubleshooting, and common IT Help Desk responsibilities. This project represents the foundation of my hands-on IT Support and cybersecurity portfolio.
+Detailed installation and configuration documentation is available below.
+
+- [Kali Linux](VM-Configurations/Kali-Linux.md)
+- [Windows Server 2025](VM-Configurations/Windows-Server-2025.md)
+- [Windows 11 Enterprise](VM-Configurations/Windows-11-Enterprise.md)
+
+## IT Support Labs
+
+Hands-on exercises simulate real-world Help Desk and Windows administration responsibilities.
+
+- [Active Directory User Management](IT-Support-Labs/Active-Directory-User-Management.md)
+
+Completed exercises include employee account creation, domain authentication testing, and password-reset troubleshooting.
+
+## Security Labs
+
+Security exercises will be added as the project progresses. Future activities will include Active Directory enumeration, vulnerability assessment, Windows security testing, and penetration-testing practice within the authorized lab environment.
+
+## Skills Developed
+
+This project provides hands-on experience with VMware virtualization, Windows deployment, Active Directory Domain Services, DNS configuration, network troubleshooting, domain authentication, user account provisioning, password management, and technical documentation.
+
+## Project Roadmap
+
+The next phase will focus on account lockout troubleshooting, security groups, Group Policy, Windows administration, and basic PowerShell automation.
+
+Later phases will introduce Active Directory security assessment techniques, Python scripting, and ethical hacking exercises.
+
+## Documentation Approach
+
+Each lab session is documented separately to capture objectives, configuration changes, troubleshooting, results, and lessons learned. Detailed technical documentation is organized by virtual machine and lab activity, allowing the repository to serve as both a learning record and a professional portfolio.
